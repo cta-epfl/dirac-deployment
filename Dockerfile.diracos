@@ -1,0 +1,7 @@
+FROM ubuntu
+
+RUN apt update
+RUN apt install -y curl
+
+RUN curl -LO https://github.com/DIRACGrid/DIRACOS2/releases/latest/download/DIRACOS-Linux-x86_64.sh && \
+    bash DIRACOS-Linux-x86_64.sh
